@@ -2,11 +2,10 @@ from chatterbot import ChatBot
 from chatterbot.logic import MathematicalEvaluation
 from chatterbot.storage import SQLStorageAdapter
 
-# Create a ChatBot instance for the calculator
 calculator_bot = ChatBot(
     'Calculator',
     logic_adapters=[MathematicalEvaluation()],
-    storage_adapter=SQLStorageAdapter()  # You can set the database path here
+    storage_adapter=SQLStorageAdapter()  #set database path
 )
 
 # Clear the screen and start the calculator
